@@ -7,7 +7,8 @@ import {
   UserOutlined
 } from '@ant-design/icons'
 import type { MenuProps } from 'antd'
-import { Layout, Menu, theme } from 'antd'
+import { Layout, Menu } from 'antd'
+import { SampleChart } from '@renderer/components/SampleChart'
 
 const { Header, Content, Sider } = Layout
 
@@ -52,7 +53,7 @@ export function Dashboard(): JSX.Element {
         <Header style={{ padding: 0 }} />
         <Content style={{ margin: '0 16px' }}>
           <div style={{ padding: 24, minHeight: 360, backgroundColor: 'oldlace' }}>
-            Charts will come here
+            <SampleChart />
           </div>
         </Content>
       </Layout>
